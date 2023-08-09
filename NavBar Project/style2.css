@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    box-sizing: border-box;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.navBar ul{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    list-style-type: none;
+    width: 100%;
+    background-color: rgb(195, 228, 163);
+    padding: 0;
+}
+
+.navBar ul li{
+    display: flex;
+    justify-content: center;
+}
+
+.navBar ul li a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 25px;
+    background-color: rgb(195, 228, 163);
+    font: 20px;
+    font-family: sans-serif;
+    
+}
+
+.textbox-1{
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+}
+
+.textbox-1 h2{
+    background-color: #fff;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+.navBar ul li a i{
+    padding: 0 5px;
+    margin-left: 5px;
+}
+
+.navBar ul li a:hover{
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.sub-menu-1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.section1 p{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.section2 ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-menu-1{
+    display: none;
+    position: absolute;
+    background: #000;
+    margin-top: 0px;
+    margin-left: -20px;
+    border-radius: 3px; /* Add border-radius for consistency */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    z-index: 1;
+    display: flex;
+}
+
+.navBar ul li:hover .sub-menu-1{
+    display: flex;
+    margin-top: 60px;
+}
+
+.sub-menu-1 > div {
+    padding: 20px;
+    flex: 1;
+    display: none; /* Hide all sub-menu sections initially */
+    color: #fff;
+    text-align: center;
+    width: 350px;
+}
+
+.sub-menu-1 h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #000;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.navBar ul li:hover .sub-menu-1 > div {
+    display: block; /* Show sub-menu sections on hover */
+}
+
+.section1, .section2, .section3,.section2 ul li,.section3 ul li, .section1 p, .section2 ul li a, .section3 ul li a{
+    background-color: #000;
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 320px;
+}
+
+.section1, .section2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-right: lightgrey 1px solid;
+}
+
+.section3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
